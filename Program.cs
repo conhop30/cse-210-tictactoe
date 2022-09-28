@@ -33,6 +33,8 @@
     }
     
     return board;*/
+
+        // More hardcoded in this fashion
         return new List<string> {"1","2","3","4","5","6","7","8","9"};
     }
 
@@ -63,7 +65,49 @@
     /// <returns></returns>
     static bool IsWinner(List<string> board, string player)
     {
-        return false;
+        /*brute force method with 1 "if" statement with OR separations*/
+        if ((board[0] == player && board[1] == player && board[2] == player) || (board[3] == player && board[4] == player && board[5] == player) || (board[6] == player && board[7] == player && board[8] == player) || (board[0] == player && board[3] == player && board[6] == player) || (board[1] == player && board[4] == player && board[6] == player) || (board[2] == player && board[5] == player && board[8] == player) || (board[0] == player && board[4] == player && board[8] == player) || (board[2] == player && board[4] == player && board[6] == player)) {
+            return true;
+        }
+        else {
+            return false;
+        }
+        /*brute force method with 8 "if" statements
+        //top left to right
+        if (board[0] == player && board[1] == player && board[2] == player) {
+            return true;
+        }
+        //mid left to right
+        else if (board[3] == player && board[4] == player && board[5] == player) {
+            return true;
+        }
+        //bottom left to right
+        else if (board[6] == player && board[7] == player && board[8] == player) {
+            return true;
+        }
+        //top left to bottom left
+        else if (board[0] == player && board[3] == player && board[6] == player) {
+            return true;
+        }
+        //top mid to bottom mid
+        else if (board[1] == player && board[4] == player && board[6] == player) {
+            return true;
+        }
+        // top right to bottom right
+        else if (board[2] == player && board[5] == player && board[8] == player) {
+            return true;
+        }
+        //top left to bottom right
+        else if (board[0] == player && board[4] == player && board[8] == player) {
+            return true;
+        }
+        // top right to bottom left
+        else  if (board[2] == player && board[4] == player && board[6] == player) {
+            return true;
+        }
+        else {
+            return false;
+        }*/
     }
 
     /// <summary>Determines if the board is full with no more moves possible.</summary>
@@ -71,7 +115,24 @@
     /// <returns>True if the board is full.</returns>
     static bool IsTie(List<string> board)
     {
-        return false;
+        /*
+        int last_digit = board.Count() - 1;
+
+        for (int i = 0; i >= last_digit; i++) {
+            if (char.IsDigit((board[i])) {
+                return false;
+            }
+        }
+        return true;
+        */
+    foreach (string value in board) {
+        if (char.IsDigit(value[0])) {
+            return false;
+        }
+    }
+
+    return true;
+
     }
 
     /// <summary>Cycles through the players (from x to o and o to x)</summary>
@@ -79,6 +140,9 @@
     /// <returns>The next players sign (x or o)</returns>
     static string GetNextPlayer(string currentPlayer)
     {
+        if (currentPlayer == "x") {
+            return "o";
+        }
         return "x";
     }
 
@@ -87,7 +151,9 @@
     /// <returns>A 1-based spot number (not a 0-based index)</returns>
     static int GetMoveChoice(string currentPlayer)
     {
-        return 1;
+        Console.Write("Where do you want to mark: ");
+        int choice = Int16.Parse(Console.ReadLine());
+        return choice;
     }
 
     /// <summary>
@@ -100,5 +166,22 @@
     static void MakeMove(List<string> board, int choice, string currentPlayer)
     {
 
+        //Add the player sign to the board list
+        for (int i = 0; i <board.Count(); i++)
+            if (board[i].Contains(choice.ToString())) {
+                board[i] = currentPlayer;
+            }
+
+        /*
+        //Confirm what the user input
+        Console.WriteLine($"You input {choice}.");
+        
+        //Confirm what options the user can input
+        foreach (string value in board) {
+            if (board[value] != "x" || board[value] != "o") {
+                Console.Write($"{value}, ");
+            }
+        }
+        Console.WriteLine(" are available."); */
     }
 }
