@@ -1,0 +1,15 @@
+C:\Users\Connor Hopkins\OneDrive\Documents\GitHub\cse-210-tictactoe\bin\Debug\net6.0\cse-210-tictactoe.exe
+C:\Users\Connor Hopkins\OneDrive\Documents\GitHub\cse-210-tictactoe\bin\Debug\net6.0\cse-210-tictactoe.deps.json
+C:\Users\Connor Hopkins\OneDrive\Documents\GitHub\cse-210-tictactoe\bin\Debug\net6.0\cse-210-tictactoe.runtimeconfig.json
+C:\Users\Connor Hopkins\OneDrive\Documents\GitHub\cse-210-tictactoe\bin\Debug\net6.0\cse-210-tictactoe.dll
+C:\Users\Connor Hopkins\OneDrive\Documents\GitHub\cse-210-tictactoe\bin\Debug\net6.0\cse-210-tictactoe.pdb
+C:\Users\Connor Hopkins\OneDrive\Documents\GitHub\cse-210-tictactoe\obj\Debug\net6.0\cse-210-tictactoe.csproj.AssemblyReference.cache
+C:\Users\Connor Hopkins\OneDrive\Documents\GitHub\cse-210-tictactoe\obj\Debug\net6.0\cse-210-tictactoe.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Connor Hopkins\OneDrive\Documents\GitHub\cse-210-tictactoe\obj\Debug\net6.0\cse-210-tictactoe.AssemblyInfoInputs.cache
+C:\Users\Connor Hopkins\OneDrive\Documents\GitHub\cse-210-tictactoe\obj\Debug\net6.0\cse-210-tictactoe.AssemblyInfo.cs
+C:\Users\Connor Hopkins\OneDrive\Documents\GitHub\cse-210-tictactoe\obj\Debug\net6.0\cse-210-tictactoe.csproj.CoreCompileInputs.cache
+C:\Users\Connor Hopkins\OneDrive\Documents\GitHub\cse-210-tictactoe\obj\Debug\net6.0\cse-210-tictactoe.dll
+C:\Users\Connor Hopkins\OneDrive\Documents\GitHub\cse-210-tictactoe\obj\Debug\net6.0\refint\cse-210-tictactoe.dll
+C:\Users\Connor Hopkins\OneDrive\Documents\GitHub\cse-210-tictactoe\obj\Debug\net6.0\cse-210-tictactoe.pdb
+C:\Users\Connor Hopkins\OneDrive\Documents\GitHub\cse-210-tictactoe\obj\Debug\net6.0\cse-210-tictactoe.genruntimeconfig.cache
+C:\Users\Connor Hopkins\OneDrive\Documents\GitHub\cse-210-tictactoe\obj\Debug\net6.0\ref\cse-210-tictactoe.dll
